@@ -102,6 +102,8 @@ public class IngredientEditor : Editor
     List<MultiStateButton> colorButtons;
     List<MultiStateButton> symbolButtons;
 
+    int buttonIndex = 0;
+
     private void InitMultiStateButtons()
     {
         states = new List<(string text, Color color)>();
@@ -112,16 +114,24 @@ public class IngredientEditor : Editor
         colorDB = AssetDatabase.LoadAssetAtPath<ColorDatabase>("Assets/Resources/Data/ColorData.asset");
 
         colorButtons = new List<MultiStateButton>();
+
+        buttonIndex = 0;
+
+        FilterStateStorage.instance.LoadFromDictionary();
         foreach(ColorEntry c in colorDB.colors)
         {
-            colorButtons.Add(new MultiStateButton(c.color,null,ref states));
+            int savedState = FilterStateStorage.instance.buttonStates.GetValueOrDefault(GetKey((Ingredient)target, buttonIndex), 0);
+            colorButtons.Add(new MultiStateButton(c.color,null,ref states, savedState));
+            ++buttonIndex;
         }
 
         symbolDB = AssetDatabase.LoadAssetAtPath<SymbolDatabase>("Assets/Resources/Data/SymbolData.asset");
         symbolButtons = new List<MultiStateButton>();
         foreach (SymbolEntry s in symbolDB.symbols)
         {
-            symbolButtons.Add(new MultiStateButton(null,s.image, ref states));
+            int savedState = FilterStateStorage.instance.buttonStates.GetValueOrDefault(GetKey((Ingredient)target, buttonIndex), 0);
+            symbolButtons.Add(new MultiStateButton(null,s.image, ref states, savedState));
+            buttonIndex++;
         }
     }
 
@@ -130,17 +140,29 @@ public class IngredientEditor : Editor
         minSymbols = 1;
         maxSymbols = 4;
 
-        foreach(MultiStateButton b in symbolButtons)
+        buttonIndex = 0;
+        foreach (MultiStateButton b in symbolButtons)
         {
             b.CleanState();
+            FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+            FilterStateStorage.instance.Save();
+            ++buttonIndex;
         }
 
         foreach (MultiStateButton b in colorButtons)
         {
             b.CleanState();
+            FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+            FilterStateStorage.instance.Save();
+            ++buttonIndex;
         }
 
         EditorUtility.SetDirty(target);
+    }
+    public string GetKey(ScriptableObject ingrediente, int index)
+    {
+        string guid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(ingrediente));
+        return $"{guid}_Boton_{index}";
     }
 
     public override void OnInspectorGUI()
@@ -174,6 +196,8 @@ public class IngredientEditor : Editor
         DrawMinMaxRandomOptions();
         EditorGUILayout.Space(10);
 
+        buttonIndex = 0;
+
         DrawColorListRandomOptions();
         EditorGUILayout.Space(10);
 
@@ -199,34 +223,33 @@ public class IngredientEditor : Editor
         EditorGUILayout.EndHorizontal();
     }
 
-    private void DrawSymbolListRandomOptions()
-    {
-        EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(symbolDB.symbols.Count * symbolButtons[0].size));
-        foreach(MultiStateButton b in symbolButtons)
-        {
-            b.DrawMultiStateButton();
-        }
-        EditorGUILayout.EndHorizontal();
-    }
-
-    public void DrawSymbol(Rect position, Sprite symbolSprite)
-    {
-        Texture2D tex = symbolSprite.texture;
-        Rect texCoords = new Rect(
-            symbolSprite.textureRect.x / tex.width,
-            symbolSprite.textureRect.y / tex.height,
-            symbolSprite.textureRect.width / tex.width,
-            symbolSprite.textureRect.height / tex.height
-        );
-        GUI.DrawTexture(position, tex, ScaleMode.StretchToFill);
-    }
-
     private void DrawColorListRandomOptions()
     {
         EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(colorDB.colors.Count * colorButtons[0].size));
         foreach (MultiStateButton b in colorButtons)
         {
-            b.DrawMultiStateButton();
+            if (b.DrawMultiStateButton())
+            {
+                FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+                FilterStateStorage.instance.Save();
+            }
+            ++buttonIndex;
+        }
+        EditorGUILayout.EndHorizontal();
+    }
+
+
+    private void DrawSymbolListRandomOptions()
+    {
+        EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(symbolDB.symbols.Count * symbolButtons[0].size));
+        foreach (MultiStateButton b in symbolButtons)
+        {
+            if (b.DrawMultiStateButton())
+            {
+                FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+                FilterStateStorage.instance.Save();
+            }
+            ++buttonIndex;
         }
         EditorGUILayout.EndHorizontal();
     }

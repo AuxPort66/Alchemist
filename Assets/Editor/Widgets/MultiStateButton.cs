@@ -20,7 +20,7 @@ public class MultiStateButton
     private int actualState;
     List<(string text, Color color)> listStates;
 
-    public MultiStateButton(Color? backgroundColor, Sprite sprite, ref List<(string text, Color color)> listStates)
+    public MultiStateButton(Color? backgroundColor, Sprite sprite, ref List<(string text, Color color)> listStates, int state)
     {
         buttonStyle = new GUIStyle(GUI.skin.button);
         buttonStyle.margin = new RectOffset(0, 0, 0, 0);
@@ -54,6 +54,7 @@ public class MultiStateButton
         defaultBackgroundColor = GUI.backgroundColor;
 
         this.listStates = listStates;
+        this.actualState = state;
     }
 
     public bool DrawMultiStateButton()
