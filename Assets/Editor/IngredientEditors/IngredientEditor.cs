@@ -3,11 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
-using UnityEditor.UI;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEditorInternal.VersionControl.ListControl;
 
 [CustomPropertyDrawer(typeof(SymbolColored))]
 public class SymbolListDrawer : PropertyDrawer
@@ -252,23 +248,6 @@ public class IngredientEditor : Editor
             ++buttonIndex;
         }
         EditorGUILayout.EndHorizontal();
-    }
-
-    private void DrawTextWithOutline(Rect rect, string text, Color color)
-    {
-        GUIStyle style = new GUIStyle(GUI.skin.label);
-        style.alignment = TextAnchor.UpperRight;
-        style.fontSize = 16;
-
-        Color prev = GUI.contentColor;
-
-        GUI.contentColor = Color.black;
-        GUI.Label(new Rect(rect.x + 1, rect.y + 1, rect.width, rect.height), text, style);
-
-        GUI.contentColor = color;
-        GUI.Label(rect, text, style);
-
-        GUI.contentColor = prev;
     }
 
     private void RandomizeSymbolList()
