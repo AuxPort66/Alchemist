@@ -43,12 +43,6 @@ public class MultiStateButton
         if (sprite != null)
         {
             tex = sprite.texture;
-            texCoords = new Rect(
-                sprite.textureRect.x / tex.width,
-                sprite.textureRect.y / tex.height,
-                sprite.textureRect.width / tex.width,
-                sprite.textureRect.height / tex.height
-            );
         }
 
         defaultBackgroundColor = GUI.backgroundColor;
