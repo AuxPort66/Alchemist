@@ -6,8 +6,10 @@ using UnityEngine.UIElements;
 public class MultiStateButton
 {
     private GUIStyle buttonStyle;
-    bool withBackgroundColor;
-    Rect rect;
+    public int size = 30;
+
+    //This is only if we have backgroundColor
+    Color backgroundColor;
 
     //This is only if we have sprite
     Texture2D tex;
@@ -15,21 +17,21 @@ public class MultiStateButton
 
     private Color defaultBackgroundColor;
     
-    int actualState;
+    private int actualState;
     List<(string text, Color color)> listStates;
 
-    public MultiStateButton(bool withBackgroundColor, Sprite sprite, List<(string text, Color color)> listStates)
+    public MultiStateButton(Color? backgroundColor, Sprite sprite, ref List<(string text, Color color)> listStates)
     {
         buttonStyle = new GUIStyle(GUI.skin.button);
         buttonStyle.margin = new RectOffset(0, 0, 0, 0);
         buttonStyle.padding = new RectOffset(0, 0, 0, 0);
-        buttonStyle.fixedHeight = 30;
-        buttonStyle.fixedWidth = 30;
+        buttonStyle.fixedHeight = size;
+        buttonStyle.fixedWidth = size;
 
-        rect = GUILayoutUtility.GetRect(30, 30);
-
-        if (withBackgroundColor)
+        if (backgroundColor != null)
         {
+            this.backgroundColor = backgroundColor.Value;
+
             Color baseTextureColor = new Color(0.85f, 0.85f, 0.85f);
             Texture2D backgroundTex = new Texture2D(1, 1);
             backgroundTex.SetPixel(0, 0, baseTextureColor);
@@ -56,11 +58,17 @@ public class MultiStateButton
 
     public bool DrawMultiStateButton()
     {
+        if (backgroundColor != null)
+        {
+            GUI.backgroundColor = backgroundColor;
+        }
+
+        Rect rect = GUILayoutUtility.GetRect(30, 30);
         bool buttonResult = false;
         if (GUI.Button(rect, GUIContent.none, buttonStyle))
         {
             actualState++;
-            if (actualState > listStates.Count) actualState = 0;
+            if (actualState >= listStates.Count) actualState = 0;
             buttonResult =  true;
         }
 
@@ -69,12 +77,12 @@ public class MultiStateButton
             GUI.DrawTexture(rect, tex, ScaleMode.StretchToFill);
         }
 
-        DrawStateIconsWithOutline();
-
+        DrawStateIconsWithOutline(rect);
+        GUI.backgroundColor = defaultBackgroundColor;
         return buttonResult;
     }
 
-    private void DrawStateIconsWithOutline()
+    private void DrawStateIconsWithOutline(Rect rect)
     {
         GUIStyle style = new GUIStyle(GUI.skin.label);
         style.alignment = TextAnchor.UpperRight;
@@ -89,5 +97,15 @@ public class MultiStateButton
         GUI.Label(rect, listStates[actualState].text, style);
 
         GUI.contentColor = prev;
+    }
+
+    public int GetState()
+    {
+        return actualState;
+    }
+
+    public void CleanState()
+    {
+        actualState = 0;
     }
 }

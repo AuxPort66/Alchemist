@@ -7,6 +7,7 @@ using UnityEditor.UI;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEditorInternal.VersionControl.ListControl;
 
 [CustomPropertyDrawer(typeof(SymbolColored))]
 public class SymbolListDrawer : PropertyDrawer
@@ -93,20 +94,13 @@ public class IngredientEditor : Editor
     private int maxSymbols = 4;
 
     private bool init = true;
-    private GUIStyle colorButtonStyle;
-    private GUIStyle symbolButtonStyle;
 
     private ColorDatabase colorDB;
     private SymbolDatabase symbolDB;
 
-    private Color defaultBackgroundColor;
-    private Color defaultColor;
-    int[] toggledColorButtons;
-    int[] toggledSymbolButtons;
-
-
     List<(string text, Color color)> states;
-    MultiStateButton[] colorButtons;
+    List<MultiStateButton> colorButtons;
+    List<MultiStateButton> symbolButtons;
 
     private void InitMultiStateButtons()
     {
@@ -114,14 +108,21 @@ public class IngredientEditor : Editor
         states.Add(("", Color.white));
         states.Add(("✔", Color.green));
         states.Add(("✖", Color.red));
-    }
 
-    private void InitDataBaseLists()
-    {
         colorDB = AssetDatabase.LoadAssetAtPath<ColorDatabase>("Assets/Resources/Data/ColorData.asset");
+
+        colorButtons = new List<MultiStateButton>();
+        foreach(ColorEntry c in colorDB.colors)
+        {
+            colorButtons.Add(new MultiStateButton(c.color,null,ref states));
+        }
+
         symbolDB = AssetDatabase.LoadAssetAtPath<SymbolDatabase>("Assets/Resources/Data/SymbolData.asset");
-        toggledColorButtons = new int[colorDB.colors.Count];
-        toggledSymbolButtons = new int[symbolDB.symbols.Count];
+        symbolButtons = new List<MultiStateButton>();
+        foreach (SymbolEntry s in symbolDB.symbols)
+        {
+            symbolButtons.Add(new MultiStateButton(null,s.image, ref states));
+        }
     }
 
     private void ClearFilterRandom()
@@ -129,14 +130,14 @@ public class IngredientEditor : Editor
         minSymbols = 1;
         maxSymbols = 4;
 
-        for(int i = 0; i < toggledColorButtons.Length; ++i)
+        foreach(MultiStateButton b in symbolButtons)
         {
-            toggledColorButtons[i] = 0;
+            b.CleanState();
         }
 
-        for (int i = 0; i < toggledSymbolButtons.Length; ++i)
+        foreach (MultiStateButton b in colorButtons)
         {
-            toggledSymbolButtons[i] = 0;
+            b.CleanState();
         }
 
         EditorUtility.SetDirty(target);
@@ -146,8 +147,7 @@ public class IngredientEditor : Editor
     {
         if (init)
         {
-            InitStyles();
-            InitDataBaseLists();
+            InitMultiStateButtons();
             init = false;
         }
 
@@ -201,34 +201,11 @@ public class IngredientEditor : Editor
 
     private void DrawSymbolListRandomOptions()
     {
-        EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(symbolDB.symbols.Count * symbolButtonStyle.fixedWidth));
-        int i = 0;
-        foreach (var s in symbolDB.symbols)
+        EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(symbolDB.symbols.Count * symbolButtons[0].size));
+        foreach(MultiStateButton b in symbolButtons)
         {
-            string text = "";
-            Color textColor = defaultColor;
-            if (toggledSymbolButtons[i] == 1)
-            {
-                text = "✔";
-                textColor = Color.green;
-            }
-            else if (toggledSymbolButtons[i] == 2)
-            {
-                text = "✖";
-                textColor = Color.red;
-            }
-
-            Rect rect = GUILayoutUtility.GetRect(30, 30);
-            if (GUI.Button(rect, GUIContent.none, symbolButtonStyle))
-            {
-                toggledSymbolButtons[i]++;
-                if (toggledSymbolButtons[i] > 2) toggledSymbolButtons[i] = 0;
-            }
-            DrawSymbol(rect, s.image);
-            DrawTextWithOutline(rect, text, textColor);
-            i++;
+            b.DrawMultiStateButton();
         }
-        GUI.contentColor = defaultColor;
         EditorGUILayout.EndHorizontal();
     }
 
@@ -246,35 +223,11 @@ public class IngredientEditor : Editor
 
     private void DrawColorListRandomOptions()
     {
-        EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(colorDB.colors.Count * colorButtonStyle.fixedWidth));
-        int i = 0;
-        foreach (var c in colorDB.colors)
+        EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(colorDB.colors.Count * colorButtons[0].size));
+        foreach (MultiStateButton b in colorButtons)
         {
-            GUI.backgroundColor = c.color;
-            string text = "";
-            Color textColor = defaultColor;
-            if (toggledColorButtons[i] == 1)
-            {
-                text = "✔";
-                textColor = Color.green;
-            }
-            else if (toggledColorButtons[i] == 2)
-            {
-                text = "✖";
-                textColor = Color.red;
-            }
-
-            Rect rect = GUILayoutUtility.GetRect(30, 30);
-            if (GUI.Button(rect,GUIContent.none, colorButtonStyle))
-            {
-                toggledColorButtons[i]++;
-                if (toggledColorButtons[i] > 2) toggledColorButtons[i] = 0;
-            }
-            DrawTextWithOutline(rect, text, textColor);
-            i++;
+            b.DrawMultiStateButton();
         }
-        GUI.contentColor = defaultColor;
-        GUI.backgroundColor = defaultBackgroundColor;
         EditorGUILayout.EndHorizontal();
     }
 
@@ -325,10 +278,10 @@ public class IngredientEditor : Editor
     private void GenerateColorFilters(ref List<ColorType> mandatoryColors, ref List<ColorType> bannedColors)
     {
         int i = 0;
-        foreach (int toggledColor in toggledColorButtons)
+        foreach (MultiStateButton b in colorButtons)
         {
-            if (toggledColor == 1) mandatoryColors.Add((ColorType)i);
-            else if (toggledColor == 2) bannedColors.Add((ColorType)i);
+            if (b.GetState() == 1) mandatoryColors.Add((ColorType)i);
+            else if (b.GetState() == 2) bannedColors.Add((ColorType)i);
             ++i;
         }
     }
@@ -336,10 +289,10 @@ public class IngredientEditor : Editor
     private void GenerateSymbolFilters(ref List<SymbolType> mandatorySymbols, ref List<SymbolType> bannedSymbols)
     {
         int i = 0;
-        foreach(int toggledSymbol in toggledSymbolButtons)
+        foreach (MultiStateButton b in symbolButtons)
         {
-            if (toggledSymbol == 1) mandatorySymbols.Add((SymbolType)i);
-            else if (toggledSymbol == 2) bannedSymbols.Add((SymbolType)i);
+            if (b.GetState() == 1) mandatorySymbols.Add((SymbolType)i);
+            else if (b.GetState() == 2) bannedSymbols.Add((SymbolType)i);
             ++i;
         }
     }
