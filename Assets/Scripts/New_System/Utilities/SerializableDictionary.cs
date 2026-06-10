@@ -48,6 +48,11 @@ public class SerializableDictionary <T, K>
         }
     }
 
+    public int GetSize()
+    {
+        return serializedDictionary.Count;
+    }
+
     public K GetValueOrDefault(T key, K defaultValue)
     {
         Init();
