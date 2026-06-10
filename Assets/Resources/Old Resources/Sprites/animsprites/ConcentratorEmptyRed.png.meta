@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: ca4b24c5274a78747980c053c0bbb54a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8366768279696903477
+    second: ConcentratorEmptyRed_0
+  - first:
+      213: -6082538693551911935
+    second: ConcentratorEmptyRed_1
+  - first:
+      213: 7171264656620656564
+    second: ConcentratorEmptyRed_2
+  - first:
+      213: -6493460944259245185
+    second: ConcentratorEmptyRed_3
+  - first:
+      213: 5776929654419494432
+    second: ConcentratorEmptyRed_4
+  - first:
+      213: -8008969636386164768
+    second: ConcentratorEmptyRed_5
+  - first:
+      213: 1203478682196399706
+    second: ConcentratorEmptyRed_6
+  - first:
+      213: -3233096828591689101
+    second: ConcentratorEmptyRed_7
+  - first:
+      213: 5674590846303742661
+    second: ConcentratorEmptyRed_8
+  - first:
+      213: -423670249149494519
+    second: ConcentratorEmptyRed_9
+  - first:
+      213: -1656936496675690958
+    second: ConcentratorEmptyRed_10
+  - first:
+      213: -2911802121937717384
+    second: ConcentratorEmptyRed_11
+  - first:
+      213: 987360051751436169
+    second: ConcentratorEmptyRed_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2f8a2249443eb80800000000000000
+      internalID: -8366768279696903477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c054ee84b769ba0800000000000000
+      internalID: -6082538693551911935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b71030d533758360800000000000000
+      internalID: 7171264656620656564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b1e8ecca792e5a0800000000000000
+      internalID: -6493460944259245185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0261818c9e6cb2050800000000000000
+      internalID: 5776929654419494432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef205e8c8c6ad090800000000000000
+      internalID: -8008969636386164768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5652133c7d93b010800000000000000
+      internalID: 1203478682196399706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_7
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372b957609bb123d0800000000000000
+      internalID: -3233096828591689101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca2e973f4230ce40800000000000000
+      internalID: 5674590846303742661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b0b813722de1af0800000000000000
+      internalID: -423670249149494519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236e34cf8016109e0800000000000000
+      internalID: -1656936496675690958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_11
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8777ca1c5633797d0800000000000000
+      internalID: -2911802121937717384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConcentratorEmptyRed_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f3e0e5cbec3bd00800000000000000
+      internalID: 987360051751436169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ConcentratorEmptyRed_0: -8366768279696903477
+      ConcentratorEmptyRed_1: -6082538693551911935
+      ConcentratorEmptyRed_10: -1656936496675690958
+      ConcentratorEmptyRed_11: -2911802121937717384
+      ConcentratorEmptyRed_12: 987360051751436169
+      ConcentratorEmptyRed_2: 7171264656620656564
+      ConcentratorEmptyRed_3: -6493460944259245185
+      ConcentratorEmptyRed_4: 5776929654419494432
+      ConcentratorEmptyRed_5: -8008969636386164768
+      ConcentratorEmptyRed_6: 1203478682196399706
+      ConcentratorEmptyRed_7: -3233096828591689101
+      ConcentratorEmptyRed_8: 5674590846303742661
+      ConcentratorEmptyRed_9: -423670249149494519
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

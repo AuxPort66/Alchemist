@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: f55ebd83a838c4342ae74a5ef75455f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7789283166998911242
+    second: Concentratoryellow_0
+  - first:
+      213: -7612314825048977209
+    second: Concentratoryellow_1
+  - first:
+      213: -1348364940489785045
+    second: Concentratoryellow_2
+  - first:
+      213: 4141454730155951152
+    second: Concentratoryellow_3
+  - first:
+      213: -3968721476812202484
+    second: Concentratoryellow_4
+  - first:
+      213: 3928303773353046755
+    second: Concentratoryellow_5
+  - first:
+      213: -8919233658526643030
+    second: Concentratoryellow_6
+  - first:
+      213: -5521754933530403558
+    second: Concentratoryellow_7
+  - first:
+      213: -7436552051509378237
+    second: Concentratoryellow_8
+  - first:
+      213: -7515777093083956240
+    second: Concentratoryellow_9
+  - first:
+      213: -5538520162610157269
+    second: Concentratoryellow_10
+  - first:
+      213: -4802820055445540975
+    second: Concentratoryellow_11
+  - first:
+      213: 662994176000667321
+    second: Concentratoryellow_12
+  - first:
+      213: 8199968547933550180
+    second: Concentratoryellow_13
+  - first:
+      213: -4357849691459681785
+    second: Concentratoryellow_14
+  - first:
+      213: -2795761629211699279
+    second: Concentratoryellow_15
+  - first:
+      213: -4992205228546607860
+    second: Concentratoryellow_16
+  - first:
+      213: 969589979630476675
+    second: Concentratoryellow_17
+  - first:
+      213: -5215052993519277027
+    second: Concentratoryellow_18
+  - first:
+      213: -5131273660035749713
+    second: Concentratoryellow_19
+  - first:
+      213: 6219228174686571796
+    second: Concentratoryellow_20
+  - first:
+      213: 6547210560022666343
+    second: Concentratoryellow_21
+  - first:
+      213: -2776360009811386740
+    second: Concentratoryellow_22
+  - first:
+      213: 4081109779794762505
+    second: Concentratoryellow_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Concentratoryellow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a910aa38e6e390800000000000000
+      internalID: -7789283166998911242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c014869fff9b5690800000000000000
+      internalID: -7612314825048977209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2104860b35a94de0800000000000000
+      internalID: -1348364940489785045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0348e4c7227697930800000000000000
+      internalID: 4141454730155951152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e152218d44ce8c0800000000000000
+      internalID: -3968721476812202484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2f8840873248630800000000000000
+      internalID: 3928303773353046755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaccfc26e34883480800000000000000
+      internalID: -8919233658526643030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dd82ab429ce53b0800000000000000
+      internalID: -5521754933530403558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_8
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343c4184f4f0cc890800000000000000
+      internalID: -7436552051509378237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb76bbdd8892b790800000000000000
+      internalID: -7515777093083956240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b296846a1493323b0800000000000000
+      internalID: -5538520162610157269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19feb032b94f85db0800000000000000
+      internalID: -4802820055445540975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be2cacb0bd633900800000000000000
+      internalID: 662994176000667321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_13
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46674f4f2f32cc170800000000000000
+      internalID: 8199968547933550180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70200046bcec583c0800000000000000
+      internalID: -4357849691459681785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b75b2e5c957339d0800000000000000
+      internalID: -2795761629211699279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05b1a26bcf18bab0800000000000000
+      internalID: -4992205228546607860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d17a903fca47d00800000000000000
+      internalID: 969589979630476675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_18
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c2274dee860a7b0800000000000000
+      internalID: -5215052993519277027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa82048facd0ac8b0800000000000000
+      internalID: -5131273660035749713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d4b41f2132f4650800000000000000
+      internalID: 6219228174686571796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c56d3d05d5cda50800000000000000
+      internalID: 6547210560022666343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e9796e7436879d0800000000000000
+      internalID: -2776360009811386740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoryellow_23
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b1a0ad8b303a830800000000000000
+      internalID: 4081109779794762505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Concentratoryellow_0: -7789283166998911242
+      Concentratoryellow_1: -7612314825048977209
+      Concentratoryellow_10: -5538520162610157269
+      Concentratoryellow_11: -4802820055445540975
+      Concentratoryellow_12: 662994176000667321
+      Concentratoryellow_13: 8199968547933550180
+      Concentratoryellow_14: -4357849691459681785
+      Concentratoryellow_15: -2795761629211699279
+      Concentratoryellow_16: -4992205228546607860
+      Concentratoryellow_17: 969589979630476675
+      Concentratoryellow_18: -5215052993519277027
+      Concentratoryellow_19: -5131273660035749713
+      Concentratoryellow_2: -1348364940489785045
+      Concentratoryellow_20: 6219228174686571796
+      Concentratoryellow_21: 6547210560022666343
+      Concentratoryellow_22: -2776360009811386740
+      Concentratoryellow_23: 4081109779794762505
+      Concentratoryellow_3: 4141454730155951152
+      Concentratoryellow_4: -3968721476812202484
+      Concentratoryellow_5: 3928303773353046755
+      Concentratoryellow_6: -8919233658526643030
+      Concentratoryellow_7: -5521754933530403558
+      Concentratoryellow_8: -7436552051509378237
+      Concentratoryellow_9: -7515777093083956240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

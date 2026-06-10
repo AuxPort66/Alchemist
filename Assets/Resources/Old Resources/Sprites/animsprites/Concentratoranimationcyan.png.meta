@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 668b31ec0a7bbfa4e85ad8fe1c2d6524
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3655722044393704421
+    second: Concentratoranimationcyan_0
+  - first:
+      213: 5020966146445907692
+    second: Concentratoranimationcyan_1
+  - first:
+      213: -867968147831570074
+    second: Concentratoranimationcyan_2
+  - first:
+      213: 4785966200818079558
+    second: Concentratoranimationcyan_3
+  - first:
+      213: -4884767634282679788
+    second: Concentratoranimationcyan_4
+  - first:
+      213: 2479328260765637049
+    second: Concentratoranimationcyan_5
+  - first:
+      213: -4021174323656986424
+    second: Concentratoranimationcyan_6
+  - first:
+      213: -2185854416228345109
+    second: Concentratoranimationcyan_7
+  - first:
+      213: 5396785162168752535
+    second: Concentratoranimationcyan_8
+  - first:
+      213: 3613926827665573889
+    second: Concentratoranimationcyan_9
+  - first:
+      213: -4470929634105693905
+    second: Concentratoranimationcyan_10
+  - first:
+      213: -5645304426690665064
+    second: Concentratoranimationcyan_11
+  - first:
+      213: 1433575969250012503
+    second: Concentratoranimationcyan_12
+  - first:
+      213: 1678349780388791947
+    second: Concentratoranimationcyan_13
+  - first:
+      213: 6098867681011191243
+    second: Concentratoranimationcyan_14
+  - first:
+      213: -1712732320437860763
+    second: Concentratoranimationcyan_15
+  - first:
+      213: 8758242013286682011
+    second: Concentratoranimationcyan_16
+  - first:
+      213: -7806548883740613668
+    second: Concentratoranimationcyan_17
+  - first:
+      213: 2482788842857105021
+    second: Concentratoranimationcyan_18
+  - first:
+      213: 6686300703614916937
+    second: Concentratoranimationcyan_19
+  - first:
+      213: -5459920424310547017
+    second: Concentratoranimationcyan_20
+  - first:
+      213: 4898737809241141114
+    second: Concentratoranimationcyan_21
+  - first:
+      213: 6120047659661625091
+    second: Concentratoranimationcyan_22
+  - first:
+      213: 4213159086514355511
+    second: Concentratoranimationcyan_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1439526b24444dc0800000000000000
+      internalID: -3655722044393704421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce69b24ab1e0ea540800000000000000
+      internalID: 5020966146445907692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6614528719b54f3f0800000000000000
+      internalID: -867968147831570074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64799ca07ea2b6240800000000000000
+      internalID: 4785966200818079558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412714c97b1d53cb0800000000000000
+      internalID: -4884767634282679788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9d588cae7586220800000000000000
+      internalID: 2479328260765637049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0f08af14be138c0800000000000000
+      internalID: -4021174323656986424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea9df55df84aa1e0800000000000000
+      internalID: -2185854416228345109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_8
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799da28f28b35ea40800000000000000
+      internalID: 5396785162168752535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108c2476d4f372230800000000000000
+      internalID: 3613926827665573889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29ec5f8f2114f1c0800000000000000
+      internalID: -4470929634105693905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895a926b889d7a1b0800000000000000
+      internalID: -5645304426690665064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75deea5afb515e310800000000000000
+      internalID: 1433575969250012503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_13
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86cde4ab32ba4710800000000000000
+      internalID: 1678349780388791947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd48cab7d783a450800000000000000
+      internalID: 6098867681011191243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56688fc67072b38e0800000000000000
+      internalID: -1712732320437860763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dcada35b68b8970800000000000000
+      internalID: 8758242013286682011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd32beea62199a390800000000000000
+      internalID: -7806548883740613668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_18
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d760dc65c43a47220800000000000000
+      internalID: 2482788842857105021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949596c70138acc50800000000000000
+      internalID: 6686300703614916937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdd11f4d477a34b0800000000000000
+      internalID: -5459920424310547017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fe7973510dbf340800000000000000
+      internalID: 4898737809241141114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307879acbe6cee450800000000000000
+      internalID: 6120047659661625091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationcyan_23
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73db5ededd5287a30800000000000000
+      internalID: 4213159086514355511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Concentratoranimationcyan_0: -3655722044393704421
+      Concentratoranimationcyan_1: 5020966146445907692
+      Concentratoranimationcyan_10: -4470929634105693905
+      Concentratoranimationcyan_11: -5645304426690665064
+      Concentratoranimationcyan_12: 1433575969250012503
+      Concentratoranimationcyan_13: 1678349780388791947
+      Concentratoranimationcyan_14: 6098867681011191243
+      Concentratoranimationcyan_15: -1712732320437860763
+      Concentratoranimationcyan_16: 8758242013286682011
+      Concentratoranimationcyan_17: -7806548883740613668
+      Concentratoranimationcyan_18: 2482788842857105021
+      Concentratoranimationcyan_19: 6686300703614916937
+      Concentratoranimationcyan_2: -867968147831570074
+      Concentratoranimationcyan_20: -5459920424310547017
+      Concentratoranimationcyan_21: 4898737809241141114
+      Concentratoranimationcyan_22: 6120047659661625091
+      Concentratoranimationcyan_23: 4213159086514355511
+      Concentratoranimationcyan_3: 4785966200818079558
+      Concentratoranimationcyan_4: -4884767634282679788
+      Concentratoranimationcyan_5: 2479328260765637049
+      Concentratoranimationcyan_6: -4021174323656986424
+      Concentratoranimationcyan_7: -2185854416228345109
+      Concentratoranimationcyan_8: 5396785162168752535
+      Concentratoranimationcyan_9: 3613926827665573889
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

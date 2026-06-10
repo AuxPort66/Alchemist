@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: ea7aefdbd15c06b4291290cb1f776293
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3621129214915308104
+    second: Concentratoranimationmagenta_0
+  - first:
+      213: 8784962599937032146
+    second: Concentratoranimationmagenta_1
+  - first:
+      213: -386830062819463165
+    second: Concentratoranimationmagenta_2
+  - first:
+      213: 7671862931768086675
+    second: Concentratoranimationmagenta_3
+  - first:
+      213: 8699411463991680701
+    second: Concentratoranimationmagenta_4
+  - first:
+      213: 1980240768525693152
+    second: Concentratoranimationmagenta_5
+  - first:
+      213: 8352249833651700522
+    second: Concentratoranimationmagenta_6
+  - first:
+      213: -6792638712089014122
+    second: Concentratoranimationmagenta_7
+  - first:
+      213: 2597049810687575849
+    second: Concentratoranimationmagenta_8
+  - first:
+      213: 5701833868851241187
+    second: Concentratoranimationmagenta_9
+  - first:
+      213: 7778914527466183153
+    second: Concentratoranimationmagenta_10
+  - first:
+      213: -7049304467006433416
+    second: Concentratoranimationmagenta_11
+  - first:
+      213: 8548732418999636904
+    second: Concentratoranimationmagenta_12
+  - first:
+      213: 122068070991890662
+    second: Concentratoranimationmagenta_13
+  - first:
+      213: 6221981198737508198
+    second: Concentratoranimationmagenta_14
+  - first:
+      213: 7462462634012484292
+    second: Concentratoranimationmagenta_15
+  - first:
+      213: -6599295671613863978
+    second: Concentratoranimationmagenta_16
+  - first:
+      213: 3143355392375560488
+    second: Concentratoranimationmagenta_17
+  - first:
+      213: -7298397743882775340
+    second: Concentratoranimationmagenta_18
+  - first:
+      213: 3129724229805979341
+    second: Concentratoranimationmagenta_19
+  - first:
+      213: 7567986795980324707
+    second: Concentratoranimationmagenta_20
+  - first:
+      213: -6770086907996221395
+    second: Concentratoranimationmagenta_21
+  - first:
+      213: -3271537415770244234
+    second: Concentratoranimationmagenta_22
+  - first:
+      213: -3161993441089882852
+    second: Concentratoranimationmagenta_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ae0dcd5d5d04230800000000000000
+      internalID: 3621129214915308104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfb65e90f47ae970800000000000000
+      internalID: 8784962599937032146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300343d7b14b1aaf0800000000000000
+      internalID: -386830062819463165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390168d60bee77a60800000000000000
+      internalID: 7671862931768086675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 280
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe5f2292a48ab870800000000000000
+      internalID: 8699411463991680701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e078b9bc7a3b7b10800000000000000
+      internalID: 1980240768525693152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23002ab8f629e370800000000000000
+      internalID: 8352249833651700522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6901e5e8413bbb1a0800000000000000
+      internalID: -6792638712089014122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_8
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92747060b039a0420800000000000000
+      internalID: 2597049810687575849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 210
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e06b21b1bbf02f40800000000000000
+      internalID: 5701833868851241187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f95fbb5c8144fb60800000000000000
+      internalID: 7778914527466183153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877d182afe6db2e90800000000000000
+      internalID: -7049304467006433416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3d65a87d233a670800000000000000
+      internalID: 8548732418999636904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_13
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e883e9834ca1b100800000000000000
+      internalID: 122068070991890662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 140
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66788ed4feae85650800000000000000
+      internalID: 6221981198737508198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2a0f15a3eff8760800000000000000
+      internalID: 7462462634012484292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7cead1d879a64a0800000000000000
+      internalID: -6599295671613863978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8299a5d33117f9b20800000000000000
+      internalID: 3143355392375560488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_18
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4da56abe1e6ba90800000000000000
+      internalID: -7298397743882775340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 70
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6b482ea930f6b20800000000000000
+      internalID: 3129724229805979341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ff04fd4e3e60960800000000000000
+      internalID: 7567986795980324707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20dc5e93d1db02a0800000000000000
+      internalID: -6770086907996221395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b7d9fbd0a2992d0800000000000000
+      internalID: -3271537415770244234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concentratoranimationmagenta_23
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15f8b1e7b75e14d0800000000000000
+      internalID: -3161993441089882852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Concentratoranimationmagenta_0: 3621129214915308104
+      Concentratoranimationmagenta_1: 8784962599937032146
+      Concentratoranimationmagenta_10: 7778914527466183153
+      Concentratoranimationmagenta_11: -7049304467006433416
+      Concentratoranimationmagenta_12: 8548732418999636904
+      Concentratoranimationmagenta_13: 122068070991890662
+      Concentratoranimationmagenta_14: 6221981198737508198
+      Concentratoranimationmagenta_15: 7462462634012484292
+      Concentratoranimationmagenta_16: -6599295671613863978
+      Concentratoranimationmagenta_17: 3143355392375560488
+      Concentratoranimationmagenta_18: -7298397743882775340
+      Concentratoranimationmagenta_19: 3129724229805979341
+      Concentratoranimationmagenta_2: -386830062819463165
+      Concentratoranimationmagenta_20: 7567986795980324707
+      Concentratoranimationmagenta_21: -6770086907996221395
+      Concentratoranimationmagenta_22: -3271537415770244234
+      Concentratoranimationmagenta_23: -3161993441089882852
+      Concentratoranimationmagenta_3: 7671862931768086675
+      Concentratoranimationmagenta_4: 8699411463991680701
+      Concentratoranimationmagenta_5: 1980240768525693152
+      Concentratoranimationmagenta_6: 8352249833651700522
+      Concentratoranimationmagenta_7: -6792638712089014122
+      Concentratoranimationmagenta_8: 2597049810687575849
+      Concentratoranimationmagenta_9: 5701833868851241187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

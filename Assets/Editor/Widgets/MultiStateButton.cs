@@ -1,0 +1,93 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class MultiStateButton
+{
+    private GUIStyle buttonStyle;
+    bool withBackgroundColor;
+    Rect rect;
+
+    //This is only if we have sprite
+    Texture2D tex;
+    Rect texCoords;
+
+    private Color defaultBackgroundColor;
+    
+    int actualState;
+    List<(string text, Color color)> listStates;
+
+    public MultiStateButton(bool withBackgroundColor, Sprite sprite, List<(string text, Color color)> listStates)
+    {
+        buttonStyle = new GUIStyle(GUI.skin.button);
+        buttonStyle.margin = new RectOffset(0, 0, 0, 0);
+        buttonStyle.padding = new RectOffset(0, 0, 0, 0);
+        buttonStyle.fixedHeight = 30;
+        buttonStyle.fixedWidth = 30;
+
+        rect = GUILayoutUtility.GetRect(30, 30);
+
+        if (withBackgroundColor)
+        {
+            Color baseTextureColor = new Color(0.85f, 0.85f, 0.85f);
+            Texture2D backgroundTex = new Texture2D(1, 1);
+            backgroundTex.SetPixel(0, 0, baseTextureColor);
+            backgroundTex.Apply();
+            buttonStyle.normal.background = backgroundTex;
+            buttonStyle.hover.background = backgroundTex;
+        }
+
+        if (sprite != null)
+        {
+            tex = sprite.texture;
+            texCoords = new Rect(
+                sprite.textureRect.x / tex.width,
+                sprite.textureRect.y / tex.height,
+                sprite.textureRect.width / tex.width,
+                sprite.textureRect.height / tex.height
+            );
+        }
+
+        defaultBackgroundColor = GUI.backgroundColor;
+
+        this.listStates = listStates;
+    }
+
+    public bool DrawMultiStateButton()
+    {
+        bool buttonResult = false;
+        if (GUI.Button(rect, GUIContent.none, buttonStyle))
+        {
+            actualState++;
+            if (actualState > listStates.Count) actualState = 0;
+            buttonResult =  true;
+        }
+
+        if(tex != null)
+        {
+            GUI.DrawTexture(rect, tex, ScaleMode.StretchToFill);
+        }
+
+        DrawStateIconsWithOutline();
+
+        return buttonResult;
+    }
+
+    private void DrawStateIconsWithOutline()
+    {
+        GUIStyle style = new GUIStyle(GUI.skin.label);
+        style.alignment = TextAnchor.UpperRight;
+        style.fontSize = 16;
+
+        Color prev = GUI.contentColor;
+
+        GUI.contentColor = Color.black;
+        GUI.Label(new Rect(rect.x + 1, rect.y + 1, rect.width, rect.height), listStates[actualState].text, style);
+
+        GUI.contentColor = listStates[actualState].color;
+        GUI.Label(rect, listStates[actualState].text, style);
+
+        GUI.contentColor = prev;
+    }
+}

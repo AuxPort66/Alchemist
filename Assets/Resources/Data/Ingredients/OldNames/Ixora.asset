@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145d5d1d5602d3347ad3e44e2a29477d, type: 3}
+  m_Name: Ixora
+  m_EditorClassIdentifier: 
+  name: Ixora
+  image: {fileID: -8599076897651075110, guid: f3139fa54d6249b46ac6144be7dfefdb, type: 3}
+  simbolList:
+  - color: 5
+    simbols: 1
+  - color: 0
+    simbols: 2
+  - color: 1
+    simbols: 1
