@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 
 [System.Serializable]
-public struct SymbolColored
+public class SymbolColored
 {
     public SymbolType symbol;
     public ColorType color;
@@ -33,7 +33,7 @@ public class Ingredient : ScriptableObject
         }
     }
 
-    public void AddSymbol(SymbolColored newSymbol) { symbolList.Add(newSymbol); }
+    public void AddSymbol(SymbolColored newSymbol) {    symbolList.Add(newSymbol); }
     public void RemoveSymbol(int index) { symbolList.RemoveAt(index); }
     public void CleanSymbolList() { symbolList.Clear(); }
     public void ModifySymbol(int index, SymbolColored newSymbol) { symbolList[index] = newSymbol; }
@@ -60,13 +60,32 @@ public class Ingredient : ScriptableObject
             return;
         }
 
-        for (int i = 0; i < listSize; i++)
+        symbolList = new List<SymbolColored>(listSize);
+        List<int> colorIndexNotVisited = new List<int>(listSize);
+        List<int> symbolIndexNotVisited = new List<int>(listSize);
+        
+        for(int i = 0; i < listSize; ++i)
         {
+            symbolList.Add(new SymbolColored(0,0));
+            colorIndexNotVisited.Add(i);
+            symbolIndexNotVisited.Add(i);
+        }
+
+        for (int i = 0; i < listSize; ++i)
+        {
+            int colorRandomIndex = UnityEngine.Random.Range(0, colorIndexNotVisited.Count);
+            int colorIndex = colorIndexNotVisited[colorRandomIndex];
+            colorIndexNotVisited.RemoveAt(colorRandomIndex);
+
+            int symbolRandomIndex = UnityEngine.Random.Range(0, symbolIndexNotVisited.Count);
+            int symbolIndex = symbolIndexNotVisited[symbolRandomIndex];
+            symbolIndexNotVisited.RemoveAt(symbolRandomIndex);
+
             ColorType colorType;
             if (mandatoryColors != null && mandatoryColors.Count > 0)
             {
                 colorType = mandatoryColors[0];
-                mandatoryColors.Remove(colorType);
+                mandatoryColors.RemoveAt(0);
             }
             else
             {
@@ -83,9 +102,8 @@ public class Ingredient : ScriptableObject
             {
                 symbolType = symbolsToPick[UnityEngine.Random.Range(0, symbolsToPick.Count)];
             }
-                
-            SymbolColored newSymbol = new SymbolColored(colorType, symbolType);
-            AddSymbol(newSymbol);
+            symbolList[colorIndex].color = colorType;
+            symbolList[symbolIndex].symbol = symbolType;
         }
     }
 }
