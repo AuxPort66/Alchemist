@@ -115,7 +115,8 @@ public class IngredientEditor : Editor
 
         foreach(ColorEntry c in colorDB.colors)
         {
-            int savedState = FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)];
+            string key = FilterStateStorage.GetKey((Ingredient)target, buttonIndex);
+            int savedState = FilterStateStorage.instance.buttonStates[key];
             colorButtons.Add(new MultiStateButton(c.color,null,ref states, savedState));
             ++buttonIndex;
         }
@@ -124,7 +125,8 @@ public class IngredientEditor : Editor
         symbolButtons = new List<MultiStateButton>();
         foreach (SymbolEntry s in symbolDB.symbols)
         {
-            int savedState = FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)];
+            string key = FilterStateStorage.GetKey((Ingredient)target, buttonIndex);
+            int savedState = FilterStateStorage.instance.buttonStates[key];
             symbolButtons.Add(new MultiStateButton(null,s.image, ref states, savedState));
             ++buttonIndex;
         }
@@ -147,7 +149,8 @@ public class IngredientEditor : Editor
         foreach (MultiStateButton b in symbolButtons)
         {
             b.CleanState();
-            FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+            string key = FilterStateStorage.GetKey((Ingredient) target, buttonIndex);
+            FilterStateStorage.instance.buttonStates[key] = b.GetState();
             FilterStateStorage.instance.Save();
             ++buttonIndex;
         }
@@ -155,17 +158,13 @@ public class IngredientEditor : Editor
         foreach (MultiStateButton b in colorButtons)
         {
             b.CleanState();
-            FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+            string key = FilterStateStorage.GetKey((Ingredient)target, buttonIndex);
+            FilterStateStorage.instance.buttonStates[key] = b.GetState();
             FilterStateStorage.instance.Save();
             ++buttonIndex;
         }
 
         EditorUtility.SetDirty(target);
-    }
-    public string GetKey(ScriptableObject ingredient, int index)
-    {
-        string guid = GetGUID(ingredient);
-        return $"{guid}_Boton_{index}";
     }
 
     public string GetGUID(ScriptableObject ingredient)
@@ -247,7 +246,8 @@ public class IngredientEditor : Editor
         {
             if (b.DrawMultiStateButton())
             {
-                FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+                string key = FilterStateStorage.GetKey((Ingredient)target, buttonIndex);
+                FilterStateStorage.instance.buttonStates[key] = b.GetState();
                 FilterStateStorage.instance.Save();
             }
             ++buttonIndex;
@@ -262,7 +262,8 @@ public class IngredientEditor : Editor
         {
             if (b.DrawMultiStateButton())
             {
-                FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)] = b.GetState();
+                string key = FilterStateStorage.GetKey((Ingredient)target, buttonIndex);
+                FilterStateStorage.instance.buttonStates[key] = b.GetState();
                 FilterStateStorage.instance.Save();
             }
             ++buttonIndex;

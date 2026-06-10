@@ -128,11 +128,7 @@ public class IngredientGenerator : EditorWindow
 
         ingredient.RandomizeSymbolList(listSize, mandatorySymbols, bannedSymbols, mandatoryColors, bannedColors);
     }
-    public string GetKey(ScriptableObject ingredient, int index)
-    {
-        string guid = GetGUID(ingredient);
-        return $"{guid}_Boton_{index}";
-    }
+    
     public string GetGUID(ScriptableObject ingredient)
     {
         return AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(ingredient));
@@ -143,7 +139,8 @@ public class IngredientGenerator : EditorWindow
         int size = FilterStateStorage.instance.buttonStates.GetSize();
         for(int i = 0; i < size; ++i)
         {
-            int state = FilterStateStorage.instance.buttonStates[GetKey(ingredient, buttonIndexStart)];
+            string key = FilterStateStorage.GetKey(ingredient, buttonIndexStart);
+            int state = FilterStateStorage.instance.buttonStates[key];
             if (state == 1) mandatoryColors.Add((ColorType)i);
             else if (state == 2) bannedColors.Add((ColorType)i);
             ++buttonIndexStart;
@@ -154,7 +151,8 @@ public class IngredientGenerator : EditorWindow
         int size = FilterStateStorage.instance.buttonStates.GetSize();
         for (int i = 0; i < size; ++i)
         {
-            int state = FilterStateStorage.instance.buttonStates[GetKey(ingredient, buttonIndexStart)];
+            string key = FilterStateStorage.GetKey(ingredient, buttonIndexStart);
+            int state = FilterStateStorage.instance.buttonStates[key];
             if (state == 1) mandatorySymbols.Add((SymbolType)i);
             else if (state == 2) bannedSymbols.Add((SymbolType)i);
             ++buttonIndexStart;

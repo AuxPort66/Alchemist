@@ -13,5 +13,11 @@ public class FilterStateStorage : ScriptableSingleton<FilterStateStorage>
     {
         Save(true);
     }
+
+    public static string GetKey(ScriptableObject obj, int index)
+    {
+        string guid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(obj));
+        return $"{guid}_Boton_{index}";
+    }
 }
 
