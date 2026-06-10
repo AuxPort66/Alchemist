@@ -42,6 +42,16 @@ public class SerializableDictionary <T, K>
                 ++index;
             }
         }
+        else
+        {
+            serializedDictionary = new List<DictionaryItem>();
+        }
+    }
+
+    public K GetValueOrDefault(T key, K defaultValue)
+    {
+        Init();
+        return internalDictionary.TryGetValue(key, out var v) ? v : defaultValue;
     }
 
     public K this [T key]

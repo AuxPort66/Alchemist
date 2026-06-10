@@ -4,12 +4,12 @@ using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
+using static IngredientRandomizationState;
 
 [CustomPropertyDrawer(typeof(SymbolColored))]
 public class SymbolListDrawer : PropertyDrawer
 {
     float previewSize = 40f;
-    private Dictionary<ColorType, Texture2D> colorIcons = new Dictionary<ColorType, Texture2D>();
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
         return previewSize + 4f;
@@ -129,11 +129,19 @@ public class IngredientEditor : Editor
             ++buttonIndex;
         }
     }
+    private void InitMinMaxOptions()
+    {
+        MinMaxRange minMaxStoredRange = new MinMaxRange { min = minSymbols, max = maxSymbols };
+        minMaxStoredRange = IngredientRandomizationState.instance.rangeRandom.GetValueOrDefault(GetGUID((Ingredient)target), minMaxStoredRange);
+        minSymbols = minMaxStoredRange.min;
+        maxSymbols = minMaxStoredRange.max;
+    }
 
     private void ClearFilterRandom()
     {
         minSymbols = 1;
         maxSymbols = 4;
+        IngredientRandomizationState.instance.rangeRandom[GetGUID((Ingredient)target)] = new MinMaxRange { min = minSymbols, max = maxSymbols };
 
         buttonIndex = 0;
         foreach (MultiStateButton b in symbolButtons)
@@ -154,10 +162,15 @@ public class IngredientEditor : Editor
 
         EditorUtility.SetDirty(target);
     }
-    public string GetKey(ScriptableObject ingrediente, int index)
+    public string GetKey(ScriptableObject ingredient, int index)
     {
-        string guid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(ingrediente));
+        string guid = GetGUID(ingredient);
         return $"{guid}_Boton_{index}";
+    }
+
+    public string GetGUID(ScriptableObject ingredient)
+    {
+        return AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(ingredient));
     }
 
     public override void OnInspectorGUI()
@@ -165,6 +178,7 @@ public class IngredientEditor : Editor
         if (init)
         {
             InitMultiStateButtons();
+            InitMinMaxOptions();
             init = false;
         }
 
@@ -205,10 +219,18 @@ public class IngredientEditor : Editor
         EditorGUILayout.BeginHorizontal();
 
         GUILayout.Label("Min:", GUILayout.Width(30));
-        minSymbols = EditorGUILayout.IntField(minSymbols, GUILayout.Width(30));
+        int newMin = EditorGUILayout.IntField(minSymbols, GUILayout.Width(30));
 
         GUILayout.Label("Max:", GUILayout.Width(30));
-        maxSymbols = EditorGUILayout.IntField(maxSymbols, GUILayout.Width(30));
+        int newMax = EditorGUILayout.IntField(maxSymbols, GUILayout.Width(30));
+
+        if(newMin != minSymbols || newMax != maxSymbols)
+        {
+            minSymbols = newMin;
+            maxSymbols = newMax;
+            IngredientRandomizationState.instance.rangeRandom[GetGUID((Ingredient)target)] = new MinMaxRange { min = minSymbols, max = maxSymbols };
+            IngredientRandomizationState.instance.Save();
+        }
 
         if (GUILayout.Button("Reset", GUILayout.MaxWidth(50)))
         {
@@ -233,7 +255,6 @@ public class IngredientEditor : Editor
         EditorGUILayout.EndHorizontal();
     }
 
-
     private void DrawSymbolListRandomOptions()
     {
         EditorGUILayout.BeginHorizontal(GUILayout.MaxWidth(symbolDB.symbols.Count * symbolButtons[0].size));
@@ -248,7 +269,6 @@ public class IngredientEditor : Editor
         }
         EditorGUILayout.EndHorizontal();
     }
-
     private void RandomizeSymbolList()
     {
         Ingredient ingredient = (Ingredient)target;
@@ -286,7 +306,6 @@ public class IngredientEditor : Editor
             ++i;
         }
     }
-
     private void GenerateSymbolFilters(ref List<SymbolType> mandatorySymbols, ref List<SymbolType> bannedSymbols)
     {
         int i = 0;
