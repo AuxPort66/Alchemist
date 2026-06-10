@@ -113,10 +113,9 @@ public class IngredientEditor : Editor
 
         buttonIndex = 0;
 
-        FilterStateStorage.instance.LoadFromDictionary();
         foreach(ColorEntry c in colorDB.colors)
         {
-            int savedState = FilterStateStorage.instance.buttonStates.GetValueOrDefault(GetKey((Ingredient)target, buttonIndex), 0);
+            int savedState = FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)];
             colorButtons.Add(new MultiStateButton(c.color,null,ref states, savedState));
             ++buttonIndex;
         }
@@ -125,9 +124,9 @@ public class IngredientEditor : Editor
         symbolButtons = new List<MultiStateButton>();
         foreach (SymbolEntry s in symbolDB.symbols)
         {
-            int savedState = FilterStateStorage.instance.buttonStates.GetValueOrDefault(GetKey((Ingredient)target, buttonIndex), 0);
+            int savedState = FilterStateStorage.instance.buttonStates[GetKey((Ingredient)target, buttonIndex)];
             symbolButtons.Add(new MultiStateButton(null,s.image, ref states, savedState));
-            buttonIndex++;
+            ++buttonIndex;
         }
     }
 
