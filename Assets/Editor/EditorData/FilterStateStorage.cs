@@ -7,12 +7,15 @@ using UnityEngine;
 public class FilterStateStorage : ScriptableSingleton<FilterStateStorage>
 {
     [SerializeField]
-    NewDictionary newDictionary = new NewDictionary();
-    public Dictionary<string, int> buttonStates = new();
+    SerializableDictionary<string,int> newDictionary = new SerializableDictionary<string,int>();
+    public Dictionary<string, int> buttonStates;
 
     public void LoadFromDictionary()
     {
-        buttonStates = newDictionary.ToDictionary();
+        if(buttonStates == null)
+        {
+            buttonStates = newDictionary.ToDictionary();
+        }
     }
 
     public void Save()
@@ -24,41 +27,41 @@ public class FilterStateStorage : ScriptableSingleton<FilterStateStorage>
 }
 
 [Serializable]
-public class NewDictionary
+public class SerializableDictionary<T,K>
 {
     [SerializeField]
-    List<NewDictionaryItem> dictionary;
+    List<DictionaryItem<T,K>> dictionary;
 
-    public Dictionary<string,int> ToDictionary()
+    public Dictionary<T,K> ToDictionary()
     {
-        Dictionary<string, int> newDict = new Dictionary<string, int>();
+        Dictionary<T, K> newDict = new Dictionary<T, K>();
         if(dictionary != null)
         {
             foreach (var item in dictionary)
             {
-                newDict.Add(item.name, item.state);
+                newDict.Add(item.key, item.value);
             }
         }
         return newDict;
     }
 
-    public void FromDictionary(Dictionary<string, int> dict)
+    public void FromDictionary(Dictionary<T, K> dict)
     {
-        dictionary = new List<NewDictionaryItem>();
+        dictionary = new List<DictionaryItem<T,K>>();
         foreach (var i in dict)
         {
-            NewDictionaryItem item = new NewDictionaryItem();
-            item.name = i.Key;
-            item.state = i.Value;
+            DictionaryItem<T,K> item = new DictionaryItem<T,K>();
+            item.key = i.Key;
+            item.value = i.Value;
             dictionary.Add(item);
         }
     }
 }
 [Serializable]
-public class NewDictionaryItem
+public class DictionaryItem<T,K>
 {
     [SerializeField]
-    public string name;
+    public T key;
     [SerializeField]
-    public int state;
+    public K value;
 }
