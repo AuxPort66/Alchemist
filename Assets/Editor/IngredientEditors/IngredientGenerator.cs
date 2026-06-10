@@ -7,7 +7,7 @@ public class IngredientGenerator : EditorWindow
 {
     public Texture2D spriteSheet;
     public DefaultAsset outputFolder;
-    private bool finished = false;
+    private bool generated = false;
     private int timeNotificacion;
 
     [MenuItem("Tools/Ingredient Generator")]
@@ -29,12 +29,21 @@ public class IngredientGenerator : EditorWindow
 
         if (GUILayout.Button("Generate"))
         {
-            finished = GenerateIngredientsFromSpriteSheet();
+            generated = GenerateIngredientsFromSpriteSheet();
         }
 
         EditorGUI.EndDisabledGroup();
 
-        if (finished)
+        EditorGUI.BeginDisabledGroup(outputFolder == null);
+
+        if (GUILayout.Button("Randomize Symbols of Ingredients"))
+        {
+            RandomeIngredientsOnFolder();
+        }
+
+        EditorGUI.EndDisabledGroup();
+
+        if (generated)
         {
             GUILayout.Label("Succes!", EditorStyles.boldLabel);
             RestartMessageCheck();
@@ -50,8 +59,13 @@ public class IngredientGenerator : EditorWindow
         else
         {
             timeNotificacion = 0;
-            finished = false;
+            generated = false;
         }
+    }
+
+    private void RandomeIngredientsOnFolder()
+    {
+
     }
 
     private bool GenerateIngredientsFromSpriteSheet()
