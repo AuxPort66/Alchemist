@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 
 [ExecuteAlways]
-public class BottleUI : MonoBehaviour
+public class BottleUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public RectTransform maskArea;
     public Vector2 visibilityPoint;
@@ -14,11 +14,17 @@ public class BottleUI : MonoBehaviour
     RectTransform rt;
     RectTransform rtBottleSprite;
 
+    public float hoverOffset = 20f;
+    public float hoverSpeed = 10f;
+    Vector2 target;
+    Vector2 originalPos;
+    bool hovered;
 
     private void Awake()
     {
         rt = GetComponent<RectTransform>();
         rtBottleSprite = transform.GetChild(0).GetComponent<RectTransform>();
+        originalPos = rtBottleSprite.anchoredPosition;
     }
 
     private void Update()
@@ -34,6 +40,25 @@ public class BottleUI : MonoBehaviour
         return maskRect.Contains(worldPoint);
     }
 
+    private void MoveToTarget()
+    {
+        if(rtBottleSprite.anchoredPosition != target)
+        {
+            rtBottleSprite.anchoredPosition = Vector2.Lerp(rtBottleSprite.anchoredPosition, target, Time.deltaTime * hoverSpeed);
+        }
+    }
+
+    private Rect GetRect(RectTransform maskArea)
+    {
+        Vector3[] corners = new Vector3[4];
+        maskArea.GetWorldCorners(corners);
+        return new Rect(
+            corners[0].x,
+            corners[0].y,
+            corners[2].x - corners[0].x,
+            corners[2].y - corners[0].y
+            );
+    }
 
     private void OnDrawGizmos()
     {
@@ -48,3 +73,15 @@ public class BottleUI : MonoBehaviour
         Gizmos.DrawLineList(corners);
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        hovered = true;
+        target = originalPos + Vector2.up * hoverOffset;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        hovered = false;
+        target = originalPos;
+    }
+}
