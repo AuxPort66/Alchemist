@@ -1,9 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory
 {
-    public List<InventorySlot> inventory;
+    public List<InventorySlot> inventory = new List<InventorySlot>();
     
     public void AddIngredient(Ingredient ingredient)
     {
@@ -17,6 +18,11 @@ public class Inventory
         {
             inventory[index].Add();
         }
+    }
+
+    public List<InventorySlot> GetAllSlots()
+    {
+        return inventory;
     }
 
     private int SearchForIngredient(Ingredient ingredient)

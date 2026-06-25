@@ -46,7 +46,7 @@ public class Ingredient : ScriptableObject
 
         List<SymbolType> symbolsToPick = Enum.GetValues(typeof(SymbolType)).Cast<SymbolType>().ToList();
         if(bannedSymbols != null) symbolsToPick = symbolsToPick.Except(bannedSymbols).ToList();
-        if (listSize < mandatorySymbols.Count || symbolsToPick.Count == 0)
+        if ((mandatorySymbols != null && listSize < mandatorySymbols.Count) || symbolsToPick.Count == 0)
         {
             Debug.LogError("No se puede cumplir el filtro de simbolos");
             return;
@@ -54,7 +54,7 @@ public class Ingredient : ScriptableObject
 
         List<ColorType> colorsToPick = Enum.GetValues(typeof(ColorType)).Cast<ColorType>().ToList();
         if (bannedColors != null) colorsToPick = colorsToPick.Except(bannedColors).ToList();
-        if (listSize < mandatoryColors.Count || colorsToPick.Count == 0)
+        if ((mandatorySymbols != null && listSize < mandatoryColors.Count) || colorsToPick.Count == 0)
         {
             Debug.LogError("No se puede cumplir el filtro de colors");
             return;

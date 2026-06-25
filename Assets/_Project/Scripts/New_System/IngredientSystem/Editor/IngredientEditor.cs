@@ -30,7 +30,7 @@ public class IngredientEditor : Editor
         states.Add(("✔", Color.green));
         states.Add(("✖", Color.red));
 
-        colorDB = AssetDatabase.LoadAssetAtPath<ColorDatabase>("Assets/_Project/ProjectAssets/Data/SymbolColored/ColorData.asset");
+        colorDB = AssetDatabase.LoadAssetAtPath<ColorDatabase>("Assets/_Project/ProjectAssets/Resources/SymbolColored/ColorData.asset");
 
         colorButtons = new List<MultiStateButton>();
 
@@ -44,7 +44,7 @@ public class IngredientEditor : Editor
             ++buttonIndex;
         }
 
-        symbolDB = AssetDatabase.LoadAssetAtPath<SymbolDatabase>("Assets/_Project/ProjectAssets/Data/SymbolColored/SymbolData.asset");
+        symbolDB = AssetDatabase.LoadAssetAtPath<SymbolDatabase>("Assets/_Project/ProjectAssets/Resources/SymbolColored/SymbolData.asset");
         symbolButtons = new List<MultiStateButton>();
         foreach (SymbolEntry s in symbolDB.symbols)
         {

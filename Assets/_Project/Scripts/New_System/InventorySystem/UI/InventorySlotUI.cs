@@ -13,6 +13,7 @@ public class InventorySlotUI : MonoBehaviour
     public void Init(InventorySlot slot)
     {
         this.slot = slot;
+        Load();
     }
 
     public void Load()
