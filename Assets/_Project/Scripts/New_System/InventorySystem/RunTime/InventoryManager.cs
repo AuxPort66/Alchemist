@@ -28,7 +28,22 @@ public class InventoryManager : MonoBehaviour
         inventory = new Inventory();
         inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_0"));
         inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_0"));
-        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_2"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_3"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_4"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_5"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_6"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_7"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_8"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_9"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_21"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_22"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_23"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_24"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_25"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_26"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_27"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_28"));
+        inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_29"));
 
         InitializeInventoryUI();
     }
