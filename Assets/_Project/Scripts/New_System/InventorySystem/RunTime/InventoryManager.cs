@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static InventoryManager Instance;
+
     private Inventory inventory;
     [SerializeField] private InventoryUI inventoryUI;
 
@@ -22,9 +24,15 @@ public class InventoryManager : MonoBehaviour
 
     private const int SLOTS_PER_ROW = 3;
     private const int MINIMUM_ROWS = 4;
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
+       
+        //TEST DATABASE TODO ERASE IT
         inventory = new Inventory();
         inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_0"));
         inventory.AddIngredient(Resources.Load<Ingredient>("Ingredients/Flowers_0"));
@@ -90,5 +98,15 @@ public class InventoryManager : MonoBehaviour
     private Sprite GetRandomDrawerTexture()
     {
         return drawerTextures[UnityEngine.Random.Range(0, drawerTextures.Length)];
+    }
+
+    public bool isDrawerAnimating()
+    {
+        return inventoryUI.isInventoryAnimating();
+    }
+
+    internal bool isDrawerClose()
+    {
+        return inventoryUI.isInventoryClose();
     }
 }

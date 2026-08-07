@@ -4,9 +4,23 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
+
+    [SerializeField] private InventoryHandler inventoryHandler;
+
     [SerializeField] private RectTransform maskArea;
     [SerializeField] private InventorySlotUI slotPrefab;
     [SerializeField] private Transform slotsParent;
+
+
+    public bool isInventoryAnimating()
+    {
+        return inventoryHandler.isAnimating;
+    }
+
+    public bool isInventoryClose()
+    {
+        return !inventoryHandler.isOpen;
+    }
 
     public void SetupDrawer(GameObject drawerGO, Sprite texture)
     {
