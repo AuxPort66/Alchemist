@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,7 +105,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 170
+        width: 135
         height: 216
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -117,6 +117,28 @@ TextureImporter:
       bones: []
       spriteID: 73d7ce923c511cbb0800000000000000
       internalID: -4917625390145700553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InventoryBackground_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 35
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00f37c1f5bb63a4e8321969d8145c8a
+      internalID: -1159950830
       vertices: []
       indices: 
       edges: []
@@ -136,6 +158,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       InventoryBackground_0: -4917625390145700553
+      InventoryBackground_1: -1159950830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
