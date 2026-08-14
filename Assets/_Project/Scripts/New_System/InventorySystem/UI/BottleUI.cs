@@ -25,6 +25,7 @@ public class BottleUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         rt = GetComponent<RectTransform>();
         rtBottleSprite = transform.GetChild(0).GetComponent<RectTransform>();
         originalPos = rtBottleSprite.anchoredPosition;
+        target = originalPos;
     }
 
     private void Update()
