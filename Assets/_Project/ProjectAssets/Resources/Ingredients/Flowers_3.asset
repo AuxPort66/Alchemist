@@ -19,3 +19,6 @@ MonoBehaviour:
     color: 1
   - symbol: 1
     color: 0
+  symbolCounts: 00000000020000000000000000000000
+  dominantSymbol: 1
+  nonDominantTotal: 0

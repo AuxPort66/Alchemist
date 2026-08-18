@@ -17,3 +17,6 @@ MonoBehaviour:
   symbolList:
   - symbol: 2
     color: 4
+  symbolCounts: 00000000000000000100000000000000
+  dominantSymbol: 2
+  nonDominantTotal: 0
