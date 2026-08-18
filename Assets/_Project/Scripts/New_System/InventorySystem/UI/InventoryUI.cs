@@ -97,4 +97,23 @@ public class InventoryUI : MonoBehaviour
         slotUI.Init(slot);
     }
 
+    public void Reorder(List<InventorySlot> sortedInventory)
+    {
+       for(int i = 0; i < sortedInventory.Count; i++)
+       {
+            Ingredient ingredient = sortedInventory[i].ingredient;
+            InventorySlotUI slotUI = FindSlotFor(ingredient);
+            slotUI.transform.SetSiblingIndex(i);
+       }
+    }
+    private InventorySlotUI FindSlotFor(Ingredient ingredient)
+    {
+        foreach (Transform child in bottleGrid)
+        {
+            InventorySlotUI slotUI = child.GetComponent<InventorySlotUI>();
+            if (slotUI.slot.ingredient == ingredient)
+                return slotUI;
+        }
+        return null;
+    }
 }

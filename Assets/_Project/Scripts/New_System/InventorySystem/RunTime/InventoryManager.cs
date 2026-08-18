@@ -50,19 +50,19 @@ public class InventoryManager : MonoBehaviour
         inventoryUI.Load(inventory.GetAllSlots());
     }
 
-    public void OrderIngredients()
-    {
-        //Ordenar los ingredientes
-        //Ordenar las botellas o rehacerlas
-    }
-
     public bool isDrawerAnimating()
     {
         return inventoryUI.isInventoryAnimating();
     }
 
-    internal bool isDrawerClose()
+    public bool isDrawerClose()
     {
         return inventoryUI.isInventoryClose();
+    }
+
+    public void SortInventory(SortMode mode)
+    {
+        inventory.Sort(mode);
+        inventoryUI.Reorder(inventory.inventory);
     }
 }

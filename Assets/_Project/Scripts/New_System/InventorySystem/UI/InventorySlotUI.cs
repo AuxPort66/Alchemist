@@ -8,7 +8,7 @@ public class InventorySlotUI : MonoBehaviour
     [SerializeField] private Image ingredientIcon;
     [SerializeField] private TextMeshProUGUI quantityText;
 
-    private InventorySlot slot;
+    public InventorySlot slot;
 
     public void Init(InventorySlot slot)
     {

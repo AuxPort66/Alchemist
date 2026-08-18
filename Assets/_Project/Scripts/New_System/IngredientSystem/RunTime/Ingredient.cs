@@ -24,15 +24,34 @@ public class Ingredient : ScriptableObject
     public string nameIngredient;
     public Sprite icon;
     public List<SymbolColored> symbolList = new List<SymbolColored>();
+    
+    public int[] symbolCounts;
+    public SymbolType dominantSymbol;
+    public int nonDominantTotal;
 
+#if UNITY_EDITOR
     private void OnValidate()
     {
-        if (!string.IsNullOrEmpty(nameIngredient))
+        int typeCount = Enum.GetValues(typeof(SymbolType)).Length;
+        symbolCounts = new int[typeCount];
+        foreach (SymbolColored s in symbolList)
         {
-            this.name = nameIngredient;
+            symbolCounts[(int)s.symbol]++;
         }
-    }
 
+        int maxValue = 0;
+        for(int i = 0; i < symbolCounts.Length;i++)
+        {
+            if(maxValue < symbolCounts[i])
+            {
+                dominantSymbol = (SymbolType) i;
+                maxValue = symbolCounts[i];
+            }
+            nonDominantTotal += symbolCounts[i];
+        }
+        nonDominantTotal -= symbolCounts[(int)dominantSymbol];
+    }
+#endif
     public void AddSymbol(SymbolColored newSymbol) {    symbolList.Add(newSymbol); }
     public void RemoveSymbol(int index) { symbolList.RemoveAt(index); }
     public void CleanSymbolList() { symbolList.Clear(); }
