@@ -103,9 +103,9 @@ TextureImporter:
       name: Tag
       rect:
         serializedVersion: 2
-        x: 15
-        y: 36
-        width: 31
+        x: 17
+        y: 48
+        width: 30
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -125,12 +125,12 @@ TextureImporter:
       name: EarthTag
       rect:
         serializedVersion: 2
-        x: 5
-        y: 25
+        x: 1
+        y: 57
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: FireTag
       rect:
         serializedVersion: 2
-        x: 9
-        y: 25
+        x: 5
+        y: 57
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: WaterTag
       rect:
         serializedVersion: 2
-        x: 13
-        y: 25
+        x: 9
+        y: 57
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: GreenTag
       rect:
         serializedVersion: 2
-        x: 5
-        y: 19
+        x: 1
+        y: 40
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: MagentaTag
       rect:
         serializedVersion: 2
-        x: 9
-        y: 19
+        x: 5
+        y: 52
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: CyanTag
       rect:
         serializedVersion: 2
-        x: 13
-        y: 19
+        x: 9
+        y: 52
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: YellowTag
       rect:
         serializedVersion: 2
-        x: 5
-        y: 14
+        x: 1
+        y: 52
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: WhiteTag
       rect:
         serializedVersion: 2
-        x: 9
-        y: 14
+        x: 5
+        y: 40
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: BlackTag
       rect:
         serializedVersion: 2
-        x: 13
-        y: 14
+        x: 9
+        y: 40
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: WindTag
       rect:
         serializedVersion: 2
-        x: 17
-        y: 25
+        x: 13
+        y: 57
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,9 +346,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 17
-        y: 14
-        width: 3
-        height: 4
+        y: 32
+        width: 30
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,8 +367,52 @@ TextureImporter:
       name: BlueTag
       rect:
         serializedVersion: 2
+        x: 13
+        y: 52
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8a117c450d1b64b9691108b654745b
+      internalID: -465072397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tags_0
+      rect:
+        serializedVersion: 2
         x: 17
-        y: 19
+        y: 0
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bbd7bcf168a6749afaa723c1a3e79e
+      internalID: 2069217744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tags_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 40
         width: 3
         height: 4
       alignment: 0
@@ -379,8 +423,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a8a117c450d1b64b9691108b654745b
-      internalID: -465072397
+      spriteID: 7dddb4a79a323df41b310f11b7eaa4ce
+      internalID: 60132039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tags_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0974e67baa9d5114a8e893fbc061185c
+      internalID: -1225326935
       vertices: []
       indices: 
       edges: []
@@ -408,6 +474,7 @@ TextureImporter:
       MagentaTag: -904411112
       RedTag: 1211843132
       Tag: -3235007104174373410
+      Tags_0: 2069217744
       Tags_1: 60132039
       Tags_10: 1941191167
       Tags_11: -198117879
