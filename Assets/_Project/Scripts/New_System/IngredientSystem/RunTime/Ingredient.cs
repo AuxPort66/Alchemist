@@ -46,6 +46,8 @@ public class Ingredient : ScriptableObject
             colorCounts[(int)s.color]++;
         }
 
+        int maxValue = symbolCounts[(int)(symbolList[0].symbol)];
+        dominantSymbol = symbolList[0].symbol;
         for (int i = 0; i < symbolCounts.Length;i++)
         {
             if(maxValue < symbolCounts[i])
@@ -57,6 +59,8 @@ public class Ingredient : ScriptableObject
         }
         nonDominantSymbolTotal -= symbolCounts[(int)dominantSymbol];
 
+        maxValue = colorCounts[(int)(symbolList[0].color)];
+        dominantColor = symbolList[0].color;
         for (int i = 0; i < colorCounts.Length; i++)
         {
             if (maxValue < colorCounts[i])
