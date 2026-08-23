@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tag
+      name: Tag4Elements
       rect:
         serializedVersion: 2
         x: 17
@@ -108,7 +108,7 @@ TextureImporter:
         width: 30
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,8 +125,8 @@ TextureImporter:
       name: EarthTag
       rect:
         serializedVersion: 2
-        x: 1
-        y: 57
+        x: 13
+        y: 40
         width: 3
         height: 4
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 57
+        y: 40
         width: 3
         height: 4
       alignment: 0
@@ -170,7 +170,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 57
+        y: 40
         width: 3
         height: 4
       alignment: 0
@@ -192,7 +192,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 40
+        y: 57
         width: 3
         height: 4
       alignment: 0
@@ -214,7 +214,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 52
+        y: 57
         width: 3
         height: 4
       alignment: 0
@@ -236,7 +236,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 52
+        y: 57
         width: 3
         height: 4
       alignment: 0
@@ -280,7 +280,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 40
+        y: 52
         width: 3
         height: 4
       alignment: 0
@@ -302,7 +302,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 40
+        y: 52
         width: 3
         height: 4
       alignment: 0
@@ -323,8 +323,8 @@ TextureImporter:
       name: WindTag
       rect:
         serializedVersion: 2
-        x: 13
-        y: 57
+        x: 1
+        y: 40
         width: 3
         height: 4
       alignment: 0
@@ -342,7 +342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedTag
+      name: Tag3Elements
       rect:
         serializedVersion: 2
         x: 17
@@ -350,7 +350,7 @@ TextureImporter:
         width: 30
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,7 +368,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 52
+        y: 57
         width: 3
         height: 4
       alignment: 0
@@ -386,7 +386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tags_0
+      name: Tag1Elements
       rect:
         serializedVersion: 2
         x: 17
@@ -394,7 +394,7 @@ TextureImporter:
         width: 30
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -408,15 +408,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tags_1
+      name: RedTa
       rect:
         serializedVersion: 2
         x: 13
-        y: 40
+        y: 52
         width: 3
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,7 +430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tags_2
+      name: Tag2Elements
       rect:
         serializedVersion: 2
         x: 17
@@ -438,7 +438,7 @@ TextureImporter:
         width: 30
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -472,10 +472,11 @@ TextureImporter:
       FireTag: 37996956
       GreenTag: 331919814
       MagentaTag: -904411112
-      RedTag: 1211843132
-      Tag: -3235007104174373410
-      Tags_0: 2069217744
-      Tags_1: 60132039
+      RedTa: 60132039
+      Tag1Elements: 2069217744
+      Tag2Elements: -1225326935
+      Tag3Elements: 1211843132
+      Tag4Elements: -3235007104174373410
       Tags_10: 1941191167
       Tags_11: -198117879
       Tags_12: 460558899
@@ -484,7 +485,6 @@ TextureImporter:
       Tags_15: 650960559
       Tags_16: 704324734
       Tags_17: -933852356
-      Tags_2: -1225326935
       Tags_21: 937153032
       Tags_22: -434291467
       Tags_23: -984524553
