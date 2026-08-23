@@ -13,6 +13,7 @@ public class BottleUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     RectTransform rt;
     RectTransform rtBottleSprite;
+    RectTransform rtBottleHover;
 
     public float hoverOffset = 20f;
     public float hoverSpeed = 10f;
@@ -24,13 +25,16 @@ public class BottleUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         rt = GetComponent<RectTransform>();
         rtBottleSprite = transform.GetChild(0).GetComponent<RectTransform>();
+        rtBottleHover = transform.GetChild(1).GetComponent<RectTransform>();
         originalPos = rtBottleSprite.anchoredPosition;
         target = originalPos;
     }
 
     private void Update()
     {
-        rtBottleSprite.gameObject.SetActive(isVisible());
+        bool visible = isVisible();
+        rtBottleSprite.gameObject.SetActive(visible);
+        rtBottleHover.gameObject.SetActive(visible);
         MoveToTarget();
     }
 
