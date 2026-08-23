@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,8 @@ public class InventoryUI : MonoBehaviour
     [Header("Layout")]
     [SerializeField] private Transform drawersGrid;
     [SerializeField] private Transform bottleGrid;
+
+    [SerializeField] private TextMeshProUGUI textHoverBottle;
 
     private const int SLOTS_PER_ROW = 3;
     private const int MINIMUM_ROWS = 4;
@@ -55,22 +58,6 @@ public class InventoryUI : MonoBehaviour
         GameObject bottleGO = Instantiate(bottlePrefab, bottleGrid);
         InitBottle(bottleGO, slot);
     }
-
-    //private void CreateBottlesRow(ref List<InventorySlot> slots, int rowIndex)
-    //{
-    //    GameObject bottleRowGO = Instantiate(bottlesRowPrefab, bottleGrid);
-
-    //    for (int i = 0; i < SLOTS_PER_ROW; i++)
-    //    {
-    //        int slotIndex = rowIndex * SLOTS_PER_ROW + i;
-    //        if (slots.Count > slotIndex)
-    //        {
-    //            InventorySlot slot = slots[slotIndex];
-    //            GameObject bottleGO = Instantiate(bottlePrefab, bottleRowGO.transform);
-    //            SetupBottle(bottleGO, slot);
-    //        }
-    //    }
-    //}
 
     private void SetRandomDrawerTexture(GameObject drawerGO)
     {
@@ -115,5 +102,10 @@ public class InventoryUI : MonoBehaviour
                 return slotUI;
         }
         return null;
+    }
+
+    public void SetTextBottleHover(string name)
+    {
+        textHoverBottle.text = name;
     }
 }

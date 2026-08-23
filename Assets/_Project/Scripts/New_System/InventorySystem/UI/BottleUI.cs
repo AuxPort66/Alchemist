@@ -67,11 +67,6 @@ public class BottleUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         Vector3 worldPoint = rt.TransformPoint(visibilityPoint);
         Gizmos.color = Color.cyan;
         Gizmos.DrawSphere(worldPoint, 0.2f);
-
-        //Vector3[] corners = new Vector3[4];
-        //maskArea.GetWorldCorners(corners);
-        //Gizmos.color = Color.yellow;
-        //Gizmos.DrawLineList(corners);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -80,11 +75,14 @@ public class BottleUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         hovered = true;
         target = originalPos + Vector2.up * hoverOffset;
         UIAudioManager.Instance.PlayBottleUpClip();
+        InventoryManager.Instance.SetName(gameObject.GetComponent<InventorySlotUI>().slot.ingredient.name);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         hovered = false;
         target = originalPos;
+
+        InventoryManager.Instance.SetName("");
     }
 }

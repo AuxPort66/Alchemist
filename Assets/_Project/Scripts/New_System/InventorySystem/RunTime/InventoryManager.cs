@@ -65,4 +65,9 @@ public class InventoryManager : MonoBehaviour
         inventory.Sort(mode);
         inventoryUI.Reorder(inventory.inventory);
     }
+
+    public void SetName(string name)
+    {
+        inventoryUI.SetTextBottleHover(name);
+    }
 }
