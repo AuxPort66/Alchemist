@@ -44,6 +44,7 @@ public class InventoryManager : MonoBehaviour
 
     private void LoadInventory()
     {
+        inventory.Sort(0);
         //Load Save to Inventory
         //inventory.LoadFromSave(SaveData)
         //Load UI from Inventory

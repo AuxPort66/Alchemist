@@ -27,29 +27,46 @@ public class Ingredient : ScriptableObject
     
     public int[] symbolCounts;
     public SymbolType dominantSymbol;
-    public int nonDominantTotal;
+    public int nonDominantSymbolTotal;
+
+    public int[] colorCounts;
+    public ColorType dominantColor;
+    public int nonDominantColorTotal;
 
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        int typeCount = Enum.GetValues(typeof(SymbolType)).Length;
-        symbolCounts = new int[typeCount];
+        int typeCountSymbol = Enum.GetValues(typeof(SymbolType)).Length;
+        int typeCountColor = Enum.GetValues(typeof(ColorType)).Length;
+        symbolCounts = new int[typeCountSymbol];
+        colorCounts = new int[typeCountColor];
         foreach (SymbolColored s in symbolList)
         {
             symbolCounts[(int)s.symbol]++;
+            colorCounts[(int)s.color]++;
         }
 
-        int maxValue = 0;
-        for(int i = 0; i < symbolCounts.Length;i++)
+        for (int i = 0; i < symbolCounts.Length;i++)
         {
             if(maxValue < symbolCounts[i])
             {
                 dominantSymbol = (SymbolType) i;
                 maxValue = symbolCounts[i];
             }
-            nonDominantTotal += symbolCounts[i];
+            nonDominantSymbolTotal += symbolCounts[i];
         }
-        nonDominantTotal -= symbolCounts[(int)dominantSymbol];
+        nonDominantSymbolTotal -= symbolCounts[(int)dominantSymbol];
+
+        for (int i = 0; i < colorCounts.Length; i++)
+        {
+            if (maxValue < colorCounts[i])
+            {
+                dominantColor = (ColorType)i;
+                maxValue = colorCounts[i];
+            }
+            nonDominantColorTotal += colorCounts[i];
+        }
+        nonDominantColorTotal -= colorCounts[(int)dominantColor];
     }
 #endif
     public void AddSymbol(SymbolColored newSymbol) {    symbolList.Add(newSymbol); }

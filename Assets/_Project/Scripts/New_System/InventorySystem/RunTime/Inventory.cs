@@ -15,6 +15,11 @@ public class Inventory
         SymbolType.Fire, SymbolType.Water, SymbolType.Air, SymbolType.Earth
     };
 
+    private static readonly ColorType[] colorHierarchy =
+       {
+        ColorType.White,ColorType.Cyan,ColorType.Magenta,ColorType.Yellow,ColorType.Red,ColorType.Green,ColorType.Blue,ColorType.Black
+    };
+
     public void AddIngredient(Ingredient ingredient)
     {
         int index = SearchForIngredient(ingredient);
@@ -53,6 +58,8 @@ public class Inventory
         switch (mode)
         {
             case SortMode.ByColor:
+                inventory.Sort(CompareByColor);
+                break;
             case SortMode.BySymbol:
                 inventory.Sort(CompareBySymbol);
                 break;
@@ -74,19 +81,55 @@ public class Inventory
         int typeB = Array.IndexOf(symbolHierarchy, ib.dominantSymbol);
         if (typeA != typeB) return typeA.CompareTo(typeB);
 
-        int purityA = ia.nonDominantTotal;
-        int purityB = ib.nonDominantTotal;
+        int purityA = ia.nonDominantSymbolTotal;
+        int purityB = ib.nonDominantSymbolTotal;
         if (purityA != purityB) return purityA.CompareTo(purityB);
 
-        foreach (SymbolType symbol in symbolHierarchy)
+        int countSymbolA = ia.symbolCounts[(int)ia.dominantSymbol];
+        int countSymbolB = ib.symbolCounts[(int)ib.dominantSymbol];
+        if (countSymbolA != countSymbolB) return countSymbolA.CompareTo(countSymbolB);
+
+        if(purityA != 0)
         {
-            if (symbol == ia.dominantSymbol) continue;
-            int cmp = ia.symbolCounts[(int)symbol].CompareTo(ib.symbolCounts[(int)symbol]);
-            if (cmp != 0) return cmp;
+            foreach (SymbolType symbol in symbolHierarchy)
+            {
+                if (symbol == ia.dominantSymbol) continue;
+                int cmp = ia.symbolCounts[(int)symbol].CompareTo(ib.symbolCounts[(int)symbol]);
+                if (cmp != 0) return cmp;
+            }
         }
 
         return string.Compare(ia.nameIngredient, ib.nameIngredient, StringComparison.Ordinal);
     }
 
-   
+    private int CompareByColor(InventorySlot a, InventorySlot b)
+    {
+        Ingredient ia = a.ingredient;
+        Ingredient ib = b.ingredient;
+
+        int typeA = Array.IndexOf(colorHierarchy, ia.dominantColor);
+        int typeB = Array.IndexOf(colorHierarchy, ib.dominantColor);
+        if (typeA != typeB) return typeA.CompareTo(typeB);
+
+        int purityA = ia.nonDominantColorTotal;
+        int purityB = ib.nonDominantColorTotal;
+        if (purityA != purityB) return purityA.CompareTo(purityB);
+
+        int countSymbolA = ia.colorCounts[(int)ia.dominantColor];
+        int countSymbolB = ib.colorCounts[(int)ib.dominantColor];
+        if (countSymbolA != countSymbolB) return countSymbolA.CompareTo(countSymbolB);
+
+        if (purityA != 0)
+        {
+            foreach (ColorType color in colorHierarchy)
+            {
+                if (color == ia.dominantColor) continue;
+                int cmp = ia.colorCounts[(int)color].CompareTo(ib.colorCounts[(int)color]);
+                if (cmp != 0) return cmp;
+            }
+        }
+
+        return string.Compare(ia.nameIngredient, ib.nameIngredient, StringComparison.Ordinal);
+    }
+
 }
