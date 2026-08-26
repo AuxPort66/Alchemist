@@ -71,4 +71,10 @@ public class InventoryManager : MonoBehaviour
     {
         inventoryUI.SetTextBottleHover(name);
     }
+
+    public void ChangeSortDirection(bool ascending)
+    {
+        inventory.ChangeSortDirection(ascending);
+        inventoryUI.Reorder(inventory.inventory);
+    }
 }

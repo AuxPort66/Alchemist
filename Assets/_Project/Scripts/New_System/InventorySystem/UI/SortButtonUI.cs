@@ -11,13 +11,27 @@ public struct SortModeIcon
 
 public class SortButtonUI : MonoBehaviour
 {
-    [SerializeField] private Image icon;
+    [Header("SortModes")]
+    [SerializeField] private Image iconOrder;
     [SerializeField] private SortModeIcon[] modes;
     private int currentIndex = 0;
-    public void HandleClick()
+
+    [Header("Direction")]
+    [SerializeField] private Image iconDirection;
+    [SerializeField] private Sprite ascendingIcon;
+    [SerializeField] private Sprite descendingIcon;
+    private bool ascending = false;
+    public void HandleOrderClick()
     {
         currentIndex = (currentIndex + 1) % modes.Length;
-        icon.sprite = modes[currentIndex].icon;
+        iconOrder.sprite = modes[currentIndex].icon;
         InventoryManager.Instance.SortInventory(modes[currentIndex].mode);
+    }
+
+    public void HandleDirectionClick()
+    {
+        ascending = !ascending;
+        iconDirection.sprite = ascending ? ascendingIcon : descendingIcon;
+        InventoryManager.Instance.ChangeSortDirection(ascending);
     }
 }

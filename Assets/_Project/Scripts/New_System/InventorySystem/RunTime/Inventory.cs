@@ -20,6 +20,8 @@ public class Inventory
         ColorType.White,ColorType.Cyan,ColorType.Magenta,ColorType.Yellow,ColorType.Red,ColorType.Green,ColorType.Blue,ColorType.Black
     };
 
+    private bool ascendingOrder = false;
+
     public void AddIngredient(Ingredient ingredient)
     {
         int index = SearchForIngredient(ingredient);
@@ -58,16 +60,28 @@ public class Inventory
         switch (mode)
         {
             case SortMode.ByColor:
-                inventory.Sort(CompareByColor);
+                inventory.Sort((a, b) =>
+                {
+                    int result = CompareByColor(a, b);
+                    return ascendingOrder ? -result : result;
+                });
                 break;
             case SortMode.BySymbol:
-                inventory.Sort(CompareBySymbol);
+                inventory.Sort((a, b) =>
+                {
+                    int result = CompareBySymbol(a, b);
+                    return ascendingOrder ? -result : result;
+                });
                 break;
             case SortMode.ByName:
-                inventory = inventory.OrderBy(s => s.ingredient.name).ToList();
+                inventory = ascendingOrder 
+                    ? inventory.OrderBy(s => s.ingredient.name).ToList()
+                    : inventory.OrderByDescending(s => s.ingredient.name).ToList();
                 break;
             case SortMode.ByValue:
-                inventory = inventory.OrderByDescending(s => s.quantity).ToList();
+                inventory = ascendingOrder
+                    ? inventory.OrderBy(s => s.quantity).ToList()
+                    : inventory.OrderByDescending(s => s.quantity).ToList();
                 break;
         }
     }
@@ -132,4 +146,9 @@ public class Inventory
         return string.Compare(ia.nameIngredient, ib.nameIngredient, StringComparison.Ordinal);
     }
 
+    public void ChangeSortDirection(bool ascending)
+    {
+        ascendingOrder = ascending;
+        inventory.Reverse();
+    }
 }

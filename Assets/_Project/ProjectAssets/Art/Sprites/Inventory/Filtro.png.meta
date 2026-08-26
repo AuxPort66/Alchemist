@@ -221,6 +221,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Filtro_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 15
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b10ccedc17198449acd9ca5b602391a
+      internalID: 1801940045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Filtro_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 3
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acf18404261444458c04ae6b6c6f3e5
+      internalID: 1616835094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Filtro_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa15fa5cc5a606849a9f564b5118c6d3
+      internalID: -1775941817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -241,6 +307,8 @@ TextureImporter:
       Filtro_3: -6638860116749230490
       Filtro_4: 4221152383952653275
       Filtro_5: 1801940045
+      Filtro_6: 1616835094
+      Filtro_7: -1775941817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
