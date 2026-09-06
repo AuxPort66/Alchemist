@@ -499,7 +499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &220064506
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1230,8 +1230,8 @@ MonoBehaviour:
   bottleUpClip:
   - {fileID: 8300000, guid: 57b9ef74ae6bf884eba76f277eb06bf0, type: 3}
   - {fileID: 8300000, guid: 6642d29b73f1cee40acf514f33cf291f, type: 3}
-  - {fileID: 8300000, guid: b65a1a7aaec50af499e36d38ee7ba1e6, type: 3}
   - {fileID: 8300000, guid: 9b4a8e2b068ee714a97c3a64a99c4c3a, type: 3}
+  - {fileID: 8300000, guid: 1d1f84780e899e14b92152dbebc2bcef, type: 3}
 --- !u!4 &897050350
 Transform:
   m_ObjectHideFlags: 0
@@ -2466,7 +2466,7 @@ RectTransform:
   m_Father: {fileID: 65936513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 9, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
